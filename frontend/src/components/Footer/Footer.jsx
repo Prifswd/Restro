@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import {Link} from "react-router-dom"
 
 const Footer = () => {
   return (
@@ -22,6 +23,7 @@ const Footer = () => {
                     <li>About Us</li>
                     <li>Deliver</li>
                     <li>Privacy Policy</li>
+                    <Link target='_blank' to={'https://restro-s1mx.vercel.app'}> <li>Admin</li> </Link>
                 </ul>
             </div>
             <div className="footer-content-right">
