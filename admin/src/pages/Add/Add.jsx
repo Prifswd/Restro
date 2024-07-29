@@ -14,6 +14,7 @@ const Add = ({url}) => {
     category:"Salad",
     image:"",
   })
+  const [error, setError] = useState("")
 
   const onChangeHandler = (event)=>{
     const name = event.target.name
