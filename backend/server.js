@@ -16,8 +16,8 @@ const port = 4000
 app.use(express.json())
 app.use(cors())
 
-// DB Connection
-connectDB()
+
+
 
 // api endpoints
 app.use("/api/food", foodRouter)
@@ -30,6 +30,10 @@ app.get("/", (req,res)=>{
     res.send("API Working")
 })
 
+
+// DB Connection & Listen
 app.listen(port,()=>{
+    connectDB()
     console.log(`Server Started on http://localhost:${port}`);
 })
+
