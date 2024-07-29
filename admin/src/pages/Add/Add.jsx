@@ -59,7 +59,6 @@ const Add = ({url}) => {
         category:"Salad",
         image:"",
       })
-        setImage(false)
         toast.success(response.data.message)
     } else{
         toast.error(response.data.message)
