@@ -29,7 +29,7 @@ const List = ({url}) => {
   useEffect(()=>{
     fetchList()
   },[])
-console.log(list)
+// console.log(list)
   
 
   return (
